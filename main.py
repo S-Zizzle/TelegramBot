@@ -142,14 +142,13 @@ async def message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     f.close()
     
     await context.bot.send_message(chat_id=update.effective_chat.id, text="Message recorded. Thank you!")
-    
-    #send me a private message to know there has been a message
-    
-    
+    await context.bot.send_message(chat_id=6191059960, text=f"{update.effective_user.full_name} sent a message:\n\n{msg}")
+
 
 TOKEN = "6582149586:AAG8LDg2ivH9CtdA58CUXD5-KXQvTouRX4g"
 games = []
 INGAME, ENDGAME = range(2)
+MY_CHAT_ID = 6191059960
 
 
 if __name__ == "__main__":

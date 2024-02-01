@@ -27,9 +27,9 @@ class Hangman:
         message += HANGMAN_PICS[self.failed_attempts]
         message += "\n\n"
         message += "".join(letter if letter in self.characters_tried else " _ " for letter in self.word) if not show_word else "".join(self.word)
-        message += "\n\n"
+        message += "\n\nGuessed characters:\n"
         message += " ".join(sorted([char for char in self.characters_tried if char not in self.word]))
-        message += "\n\n"
+        message += "\n\nGuessed words:\n"
         message += " ".join(sorted(self.words_tried))
         
         return message
