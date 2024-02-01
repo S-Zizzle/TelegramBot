@@ -1,0 +1,11 @@
+To-do:
+  - clean the printing of the hangman
+  - keep track of games played + won (in a txt file?)
+  - 1v1 mode?
+  - uddate bot commands to be status not print
+  - buy me a coffee button
+  - ignore commands from guesses
+  - /message command to send bugs, features, etc. Concat these msgs to a text file, then send me a private message when a new one appears
+  - Sort Hangman object cleanup/re-use
+  - Make more use of Hangman class, and maybe seperate file so this main code is cleaner
+  - update.effective_chat.id or game.chat_id???????
